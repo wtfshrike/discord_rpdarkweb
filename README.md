@@ -12,7 +12,7 @@ Need Help ??
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-#Preview
+# Preview
 
 ![Logo](https://cdn.discordapp.com/attachments/987420691043352609/1006446397308031006/unknown.png)
 
