@@ -10,9 +10,9 @@ Need Help ??
 - My Discord Server - https://discord.io/evolutes
 - [@shrike](https://www.github.com/wtfshrike)
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
-# Preview
+
+# Preview:
 
 ![Logo](https://cdn.discordapp.com/attachments/987420691043352609/1006446397308031006/unknown.png)
 
