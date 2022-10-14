@@ -3,6 +3,11 @@
 #https.//discord.io/evolutes
 
 
+#Made By shr!ke#0420
+
+#https.//discord.io/evolutes
+
+
 import discord
 import random 
 
@@ -17,13 +22,16 @@ print("""
                                                          
                                                          """)
 
-client = discord.Client()
+#turn on the intents
+client = discord.Client(intents=discord.Intents.all())
+
 
 
 bot_token = ''  #bot token
-darkwebchannel = 978157672157290516      #channel id of the darkweb channel
-log = 931586439563583530                 #channel id of the log channel where you want to get the logs
-logo = ""                                #logo of your rp server (url only)   (optional)
+darkwebchannel = 1011316149243359334      #channel id of the darkweb channel
+log = 1022530444723503144                 #channel id of the log channel where you want to get the logs
+logo = "https://cdn.discordapp.com/attachments/923994945205964851/981405477198004224/420.jpg"   
+anon_emoji =  '' #darkweb emoji you want to use (eg:- '<:newmoon_darkweb:1006442011584372756>')                #logo of your rp server (url only)   (optional)
 
 
 
@@ -31,10 +39,11 @@ logo = ""                                #logo of your rp server (url only)   (o
 async def on_ready():
     print('Bot is online!')
     print("Made By shr!ke#0420")
+    print(client.user.name)
     activity = discord.Game(name="Watching All The Darkchats !!", type=3)
     await client.change_presence(status=discord.Status.online, activity=activity)
 
-footermsg = ['wtfshrike <3' , 'Papashrike <3 ','Made By **shr!ke#0420**']
+footermsg = ['wtfshrike <3' , 'Papashrike <3 ','Made By shr!ke#0420']
 
 @client.event
 async def on_message(message):
@@ -48,11 +57,11 @@ async def on_message(message):
         if anon in message.content.lower():
             purgeChannel = client.get_channel(darkwebchannel)
             await purgeChannel.purge(limit=1)
-            emoji = '<:newmoon_darkweb:1006442011584372756>'
+            emoji = anon_emoji
             if emoji in message.content:
                 await message.channel.send(message.content)
             else:
-                await message.channel.send("<:newmoon_darkweb:1006442011584372756> "+message.content)
+                await message.channel.send(f"{emoji}" +message.content)
         else:
             await message.channel.purge(limit=1)
             errorformat= discord.Embed(title = 'Please Use The Correct Format !!',description = f'**No More Using Darkweb Emojis <3**',color=(colors))
@@ -73,7 +82,7 @@ async def on_message(message):
                         await message.channel.send(attach[0].url)
         logchannel = client.get_channel(log)
         logem = discord.Embed(title = f"Message Sent By {message.author}", description =    message.content, color=(colors))
-        logem.set_author(name=f"{message.author.name}", icon_url=f"{message.author.avatar_url}")
+        logem.set_author(name=f"{message.author.name}", icon_url=f"{message.author.avatar}")
         logem.set_footer(text=f"wtfshrike", icon_url= 'https://cdn.discordapp.com/attachments/923994945205964851/981405477198004224/420.jpg')
         await logchannel.send(f"{message.author.mention}" , embed=logem)
                     
