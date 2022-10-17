@@ -48,7 +48,7 @@ footermsg = ['wtfshrike <3' , 'Papashrike <3 ','Made By shr!ke#0420']
 @client.event
 async def on_message(message):
     channel_id = darkwebchannel
-    colors = int("0x"+''.join(random.choice('0123456789ABCDEF') for j in range(6)), 16)
+    colors = int("0x"+''.join(random.choice('0123456789ACDEF') for j in range(6)), 16)
     if message.channel.id == channel_id:
         if message.author.bot : return
         author = message.author
@@ -64,7 +64,7 @@ async def on_message(message):
                 await message.channel.send(f"{emoji}" +message.content)
         else:
             await message.channel.purge(limit=1)
-            errorformat= discord.Embed(title = 'Please Use The Correct Format !!',description = f'**No More Using Darkweb Emojis <3**',color=(colors))
+            errorformat= discord.Embed(title = 'Please Use The Correct Format !!',description = '**No More Using Darkweb Emojis <3**',color=(colors))
             errorformat.add_field(name='__Correct Format :__', value='**\n <a:GR_arrows:978234508883144744> Your Darkweb Account Name | Darkweb Message \n \n Example : - Anon111 | Selling Pistols for $69\-**', inline=True)
             errorformat.add_field(name= '__Reply Format : __',value='**\n <a:GR_arrows:978234508883144744> Example:- Anon1111 | Replying to Anon1234 | I AM INTERESTED !! **',inline = False )
             errorformat.set_thumbnail(url=logo)
