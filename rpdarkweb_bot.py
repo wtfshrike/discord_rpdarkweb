@@ -30,9 +30,8 @@ client = discord.Client(intents=discord.Intents.all())
 bot_token = ''  #bot token
 darkwebchannel = 1011316149243359334      #channel id of the darkweb channel
 log = 1022530444723503144                 #channel id of the log channel where you want to get the logs
-logo = "https://cdn.discordapp.com/attachments/923994945205964851/981405477198004224/420.jpg"   
-anon_emoji =  '' #darkweb emoji you want to use (eg:- '<:newmoon_darkweb:1006442011584372756>')                #logo of your rp server (url only)   (optional)
-
+logo = "https://cdn.discordapp.com/attachments/923994945205964851/981405477198004224/420.jpg"   #logo of your rp server (url only)   (optional)
+anon_emoji =  '' #darkweb emoji you want to use (':youremoji name: ')       (eg:- ':heart: ' )>> For ❤ This emoji at the Beginning          
 
 
 @client.event
