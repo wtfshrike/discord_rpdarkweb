@@ -1,4 +1,4 @@
-#Currently Outdated, will update to a better version soon.
+# Currently Outdated, will update to a better version soon.
 
 ____________________________________
 # Discord Darkweb Bot
